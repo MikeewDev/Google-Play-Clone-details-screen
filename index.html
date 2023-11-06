@@ -1,26 +1,621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <title>Link Generator for WhatsApp</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Google Play Clone</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Link Generator for WhatsApp</h1>
-    <input type="text" id="ddd" placeholder="Your DDD (whith +)">
-    <input type="text" id="numero" placeholder="Your number">
-    <textarea id="mensagem" placeholder="Your message"></textarea>
-    <div class="text-link">
-      <p>Link (Click to copy)</p>
+
+  <div id="navbar" class="navbar">
+    <div class="logo">
+      <svg class="svg-logo-play" aria-hidden="true" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" d="M0,0h40v40H0V0z" />
+        <g>
+          <path d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z" fill="#EA4335" />
+          <path d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z" fill="#FBBC04" />
+          <path d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z" fill="#4285F4" />
+          <path d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z" fill="#34A853" />
+        </g>
+      </svg><span class="txt-logo-play" aria-hidden="true">google_logo Play</span></a>
     </div>
-    <button id="gerarLink">Generate link</button>
+    <div class="icons">
+    </div>
+    <div class="uni-ic">
+      <div class="div-icons">
+        <img src="imgs/search.svg" alt="imgs/search">
+      </div>
+      <div class="div-icons">
+        <img src="imgs/help.svg" alt="imgs/help">
+      </div>
+    </div>
+
+    <div class="profile-image">
+      <img src="imgs/foto-perfil.png" alt="Imagem de Perfil">
+    </div>
   </div>
-  <script src="script.js"></script>
+  <div style="height: 56px" class="divisoria"></div>
+  <div class="info-app">
+    <div class="details">
+      <div class="details-app">
+        <img class="details-logo" src="imgs/logo-app.webp" alt="logo-app">
+        <div class="details-txts">
+          <p class="details-p-name">MeSeems: pesquisa e recompensa</p>
+          <div class="details-p-dono">
+            <p>MeSeems</p>
+          </div>
+          <div class="details-p-contem">
+            <p>Contém anúncios</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details-info">
+    <div class="cards">
+      <p class="card-p1">4,8 <span class="material-symbols-outlined">star</span></p>
+      <p class="card-p2">69,8 mil avaliações</p>
+    </div>
+    <div class="div-fina">
+      <div class="div-fina2">
+        <br>
+      </div>
+    </div>
+    <div class="cards">
+      <p class="card-p1">1 mi+ <span class="material-symbols-outlined"></span></p>
+      <p class="card-p2">Downloads</p>
+    </div>
+    <div class="div-fina">
+      <div class="div-fina2">
+        <br>
+      </div>
+    </div>
+    <div class="cards">
+      <img style="margin-bottom: 5px;" src="imgs/L.webp" alt="imgs/L.webp">
+      <p class="card-p2-2">Classificação Livre <img src="imgs/info.svg" alt=""></p>
+    </div>
+  </div>
+  <div class="more-info">
+    <div class="more-info2">
+      <div class="div-install">
+        <p>Instalar</p>
+      </div>
+      <div class="div-conferir">
+        <p>Conferir no app Play Store</p>
+      </div>
+    </div>
+  </div>
+  <div class="more-info-2">
+    <div class="content-info">
+      <div class="card-info">
+        <img src="imgs/share.svg" alt="">
+        <p>Compartilhar</p>
+      </div>
+      <div class="card-info2">
+        <img src="imgs/desejo.svg" alt="">
+        <p>Adicionar à lista de <br>desejos</p>
+      </div>
+    </div>
+  </div>
+  <div class="more-info-2-2">
+    <div class="content-info-2">
+      <img src="imgs/dispositivos.svg" alt="">
+      <p>Este app está disponível para alguns dos seus dispositivos</p>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slides-cards">
+      <div class="items">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-app">
+    <div class="about">
+      <p>Sobre este app</p>
+      <img src="imgs/arrow-right.svg" alt="imgs/arrow-right.svg">
+    </div>
+  </div>
+  <div class="about-description">
+    <div class="about-description-p">
+      <p>No MeSeems, você responde pesquisas e ganha pontos que podem ser trocados por recompensas incríveis: dinheiro de verdade, recarga de celular, crédito para usar no McDonald's, iFood, Outback e em lojas como Americanas.com, Casas Bahia, Lojas Renner e muito mais....</p>
+    </div>
+  </div>
+  <div class="about-update">
+    <div class="about-update-p">
+      <p style="font-family: 'Google Sans';
+      font-style: normal;
+      font-weight: 500;">Atualizado em</p>
+      <p style="font-family: normal; color: rgb(95, 99, 104);">3 de out. de 2023</p>
+    </div>
+  </div>
+  <div class="about-category">
+    <div class="category">
+      <div class="catg">
+        <p>Estilo de vida</p>
+      </div>
+    </div>
+  </div>
+  <div class="about-app">
+    <div class="about">
+      <p>Segurança dos dados</p>
+      <img src="imgs/arrow-right.svg" alt="imgs/arrow-right.svg">
+    </div>
+  </div>
+  <div class="about-description">
+    <div class="about-description-p">
+      <p>Sua segurança começa com o entendimento de como os desenvolvedores coletam e compartilham seus dados. As práticas de segurança e privacidade de dados podem variar de acordo com o uso, a região e a idade. O desenvolvedor forneceu as informações a seguir, que podem ser atualizadas ao longo do tempo.</p>
+    </div>
+  </div>
+  <div class="about-dados">
+    <div class="about-dados-cards">
+      <div class="about-dados-card1">
+        <img class="about-dados-ic" src="imgs/share2.svg" alt="imgs">
+        <div class="about-dados-p">
+          <p class="about-p1">Este app pode compartilhar estes tipos <br> de dados com terceiros</p>
+          <p class="about-p2">Fotos e vídeos</p>
+        </div>
+      </div>
+      <br>
+      <div class="about-dados-card1">
+        <img class="about-dados-ic" src="imgs/upload.svg" alt="imgs">
+        <div class="about-dados-p">
+          <p class="about-p1">Nenhum dado foi coletado</p>
+          <p class="about-p2"><span style="text-decoration: underline;
+          text-decoration-color: rgb(95, 99, 104);">Saiba mais</span> sobre como os desenvolvedores declaram a coleta</p>
+        </div>
+      </div>
+      <div class="about-dados-card1-lock">
+        <img class="about-dados-ic" src="imgs/lock.svg" alt="imgs">
+        <div class="about-dados-p-lock">
+          <p class="about-p1">Os dados são criptografados em trânsito</p>
+        </div>
+      </div>
+      <div class="about-dados-card1-lock">
+        <img class="about-dados-ic" src="imgs/delete.svg" alt="imgs">
+        <div class="about-dados-p-lock">
+          <p class="about-p1">Você pode solicitar a exclusão dos dados</p>
+        </div>
+      </div>
+      <div class="about-details">
+        <div class="about-details-p">
+          <p>Ver detalhes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-app">
+    <div class="about">
+      <p>Classificações e resenhas</p>
+      <img src="imgs/arrow-right.svg" alt="imgs/arrow-right.svg">
+    </div>
+  </div>
+  <div class="class-resen">
+    <div class="resen-p">
+      <p>As notas e avaliações são verificadas</p><img src="imgs/info.svg" alt="info.svg">
+    </div>
+  </div>
+  <div class="about-devices">
+    <div class="devices">
+      <div class="devicesctg">
+        <img src="imgs/phone.svg" alt="imgs">
+        <p>Telefone</p>
+      </div>
+      <div class="devicesctg2">
+        <img src="imgs/tablet-android.svg" alt="imgs">
+        <p>Tablet</p>
+      </div>
+    </div>
+  </div>
+  <div class="device-br">
+    <div class="device-br-div">
+      <div class="devicesctg2">
+        <img src="imgs/laptop.svg" alt="imgs">
+        <p>Chromebook</p>
+      </div>
+    </div>
+  </div>
+  <div class="avaliacoes">
+    <div class="avaliacoes-div">
+      <div class="avaliacoes-div2">
+        <div class="avalia-nota">
+          <div class="avalia-number">
+            <p>4,8</p>
+          </div>
+          <div class="avalia-stars">
+            <img src="imgs/star.svg" alt="imgs/"><img src="imgs/star.svg" alt="imgs/"><img src="imgs/star.svg" alt="imgs/"><img src="imgs/star.svg" alt="imgs/"><img id="star5" src="imgs/star-2.svg" alt="imgs/">
+          </div>
+          <div class="avalia-numbnota">
+            <p>69 mil avaliações</p>
+          </div>
+        </div>
+        <div class="avalia-grafico">
+          <div class="avalia-notas">
+            <p>5</p>
+            <div class="div-default5">
+              <div class="div-green5">
+              </div>
+            </div>
+          </div>
+          <div class="avalia-notas">
+            <p>4</p>
+            <div class="div-default4">
+              <div class="div-green4">
+              </div>
+            </div>
+          </div>
+          <div class="avalia-notas">
+            <p>3</p>
+            <div class="div-default3">
+              <div class="div-green3">
+              </div>
+            </div>
+          </div>
+          <div class="avalia-notas">
+            <p>2</p>
+            <div class="div-default2">
+              <div class="div-green2">
+              </div>
+            </div>
+          </div>
+          <div class="avalia-notas">
+            <p>1</p>
+            <div class="div-default1">
+              <div class="div-green1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="coments">
+    <div class="coment">
+      <div class="coment-user">
+        <div class="uni-img-p">
+          <img class="img-user" src="imgs/user1.webp" alt="user1.webp">
+          <p>Miguel Santos</p>
+        </div>
+        <img class="img-more" src="imgs/more-vertical.svg" alt="">
+      </div>
+      <div class="avaliado">
+        <div class="aval-stars">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+        </div>
+        <p>3 de outubro de 2023</p>
+      </div>
+      <div class="comentario">
+        <p>Aplicativo simplesmente perfeito, ele realmente <br> entrega suas recompensas, e em um tempo muito <br> curto. Além de ter diversas opções de produtos pra <br> você resgatar, chega várias pesquisas todos os dias,<br> além de ter diversos bônus ao convidar um amigo de <br> que até onde eu vi, chegou a ser de MIL PONTOS, o <br> único problema que eu tive é de que algumas <br> pesquisas das quais eu respondi não contaram os <br> pontos, e isso prejudica muito caso a pesquisa vale <br> muitos pontos.</p>
+      </div>
+      <div class="util-div">
+        <div class="util-person-p">
+          <p>Essa avaliação foi marcada como útil por 67 pessoas</p>
+        </div>
+        <div class="util-s-n">
+          <div class="util-you">
+            <p>Você achou isso útil?</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Sim</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Não</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coment">
+      <div class="coment-user">
+        <div class="uni-img-p">
+          <img class="img-user" src="imgs/user2.webp" alt="user1.webp">
+          <p>Kelly Cristina</p>
+        </div>
+        <img class="img-more" src="imgs/more-vertical.svg" alt="">
+      </div>
+      <div class="avaliado">
+        <div class="aval-stars">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+        </div>
+        <p>6 de agosto de 2023</p>
+      </div>
+      <div class="comentario">
+        <p>O app é muito bom, bastante pesquisa e com paciência de responder não demora muito pra juntar pontos. Utilizo há anos. Porém poderiam melhorar nas pesquisas, muitas vêm com "erros" chatos que prejudicam as respostas. Por exemplo: pergunta se já comprei na loja X e mesmo respondendo "NUNCA" na próxima pergunta vem uma opção que não condiz com a resposta anterior. Esse é um exemplo mas é recorrente situações como essa. E outra melhoria muito boa seria em todas as pesquisas poder corrigir.</p>
+      </div>
+      <div class="util-div">
+        <div class="util-person-p">
+          <p>Essa avaliação foi marcada como útil por 97 pessoas</p>
+        </div>
+        <div class="util-s-n">
+          <div class="util-you">
+            <p>Você achou isso útil?</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Sim</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Não</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coment">
+      <div class="coment-user">
+        <div class="uni-img-p">
+          <img class="img-user" src="imgs/user3.webp" alt="user1.webp">
+          <p>Amandinha</p>
+        </div>
+        <img class="img-more" src="imgs/more-vertical.svg" alt="">
+      </div>
+      <div class="avaliado">
+        <div class="aval-stars">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+          <img src="imgs/star.svg" alt="">
+        </div>
+        <p>3 de outubro de 2023</p>
+      </div>
+      <div class="comentario">
+        <p>Gostei do app, no entando tem um ponto que tem me desmotivado ao usar. É o fato de não está vindo pesquisas novas já faz um bom tempo, desconfio que só vai liberar se eu terminar todas que já tem no meu catálogo, mas à pesquisas que não quero responder e se for realmente isso o app quer deixar a gente sem escolha. Sou uma usuária nova ainda não sei como funciona a plataforma, não posso confirmar que seja isso. Mais um ponto pros designer repensarem na usabilidade do app</p>
+      </div>
+      <div class="util-div">
+        <div class="util-person-p">
+          <p>Essa avaliação foi marcada como útil por 207 pessoas</p>
+        </div>
+        <div class="util-s-n">
+          <div class="util-you">
+            <p>Você achou isso útil?</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Sim</p>
+          </div>
+          <div class="div-yes-no">
+            <p>Não</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ver-all-avaliacoes">
+    <div class="all-avaliacoes">
+      <div class="div-avaliacoes">
+        <p>Ver todas as avaliações</p>
+      </div>
+    </div>
+  </div>
+  <div class="about-app">
+    <div class="about">
+      <p>Suporte do app</p>
+      <img style="height: 30px; width: 30px;" src="imgs/down.svg" alt="imgs/down.svg">
+    </div>
+  </div>
+  
+  <div class="apps-similar">
+    <div class="apps-similar-div">
+      <div style="margin-bottom: 8px;" class="about-app">
+        <div style="height: 25px;" class="about">
+          <p>Apps semelhantes</p>
+          <img src="imgs/arrow-right.svg" alt="imgs/arrow-right.svg">
+        </div>
+      </div>
+      <div class="apps-cards">
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>Surveytime - pe</p>
+              </div>
+              <div class="app-card-owner">
+                <p>Surveytime</p>
+              </div>
+              <div class="app-card-nota">
+                <p>3,2</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp2.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>Toluna Influencers</p>
+              </div>
+              <div class="app-card-owner">
+                <p>Toluna Android App</p>
+              </div>
+              <div class="app-card-nota">
+                <p>4,6</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp3.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>YouGov</p>
+              </div>
+              <div class="app-card-owner">
+                <p>YouGov PLC</p>
+              </div>
+              <div class="app-card-nota">
+                <p>4,5</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp4.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>MultiPolls - Sua opinião paga</p>
+              </div>
+              <div class="app-card-owner">
+                <p>Bohemian AI Technologies</p>
+              </div>
+              <div class="app-card-nota">
+                <p>4,6</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp5.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>Wooeen Cashback</p>
+              </div>
+              <div class="app-card-owner">
+                <p>Pinup Digital</p>
+              </div>
+              <div class="app-card-nota">
+                <p>4,6</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-info">
+            <img class="app-img-ic" src="imgs/imgapp6.webp" alt="">
+            <div class="app-card-txts">
+              <div class="app-card-title">
+                <p>AttaPoll - Questionários Pagos</p>
+              </div>
+              <div class="app-card-owner">
+                <p>AttaPoll</p>
+              </div>
+              <div class="app-card-nota">
+                <p>4,5</p>
+                <img src="imgs/star-normal.svg" alt="imgs/">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="div-denuncia">
+    <div class="denuncia">
+      <img src="imgs/flag.svg" alt="">
+      <p>Sinalizar como impróprio</p>
+    </div>
+  </div>
+  <div class="divisoria-footer">
+    <div class="div-footer"></div>
+  </div>
+  <div class="footer">
+    <div class="unidivsfooter">
+      <section class="footer-infoshop">
+      <p class="nmgg" >Google Play</p>
+      <p class="ppss" >Play Pass</p
+      <p style="font-family: "Google Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(95, 99, 104);
+  height: 32px;
+  width: 59px;
+  display: flex;
+  align-items: center;">
+      <p class="vp" >Play Points</p>
+      <p class="vp" >Vales-presente</p>
+      <p class="rgr" >Resgatar</p>
+      <p class="pdr" >Política de reembolso</p>
+    </section>
+    <section class="footer-infofml">
+      <p class="cef" >Crianças e família</p>
+      <p class="gpaf" >Guia para a família</p>
+      <p class="cef2" >Compartilhamento em família</p>
+    </section>
+    </div>
+    <div class="footer-end">
+      <div class="ftr">
+        
+        <div class="card-ftr1">
+          <p class="card-ftrp1" >Termos de serviço</p>
+        </div>
+        <div class="card-ftr2">
+          <p class="card-ftrp2" >Privacidade</p>
+        </div>
+        <div class="card-ftr3">
+          <p class="card-ftrp3">Sobre o Google Play</p>
+        </div>
+        <div class="card-ftr3">
+          <p class="card-ftrp3">Desenvolvedores</p>
+        </div>
+        <div class="card-ftr3">
+          <p class="card-ftrp3">Google Play</p>
+        </div>
+        <div class="card-ftr3">
+          <p class="card-ftrp3">Todos os preços incluem Tributo.</p>
+        </div>
+        <div class="card-ftr3">
+        <div class="card-end">
+          <img src="imgs/brazil.png" alt="">
+          <div class="card-end-p">
+            <p>Brasil (Português)</p>
+          </div>
+        </div>
+        </div
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <nav class="navigation">
+    <button><svg width="24" height="24" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3 8.4C19.2169 7.65213 19.0648 6.90427 18.9009 6.09902C18.8676 5.93522 18.8338 5.76904 18.8 5.6L18.8 5.59986C18.7 5.1 18.7 5.09996 18.6 4.7L18.5 4.4C18.2 1.8 16 0 13.3 0H6.7C4.1 0 1.8 1.8 1.4 4.4C1.4 4.43174 1.4 4.4534 1.3968 4.47458C1.38993 4.52014 1.36826 4.56347 1.3 4.7C1.3 5.1 1.3 5.1 1.2 5.6C1.1 6.05 1.025 6.525 0.95 7C0.875 7.475 0.8 7.95 0.7 8.4C0.1 11.9 0 12.5 0 12.7C0 14.2 1.2 15.5 2.8 15.5C3.6 15.5 4.3 15.2 4.8 14.7L7.7 11.9H12.4L15.3 14.8C15.8 15.3 16.5 15.6 17.3 15.6C18.8 15.6 20.1 14.4 20.1 12.8C20.0055 12.5165 19.911 11.9651 19.3946 8.95177L19.3 8.4ZM13 5C13.4971 5 13.9 4.59706 13.9 4.1C13.9 3.60294 13.4971 3.2 13 3.2C12.5029 3.2 12.1 3.60294 12.1 4.1C12.1 4.59706 12.5029 5 13 5ZM15.8 6C15.8 6.49706 15.3971 6.9 14.9 6.9C14.4029 6.9 14 6.49706 14 6C14 5.50294 14.4029 5.1 14.9 5.1C15.3971 5.1 15.8 5.50294 15.8 6ZM10.5 5.4C10.2 5.7 10.2 6.3 10.5 6.6C10.8 6.9 11.4 6.9 11.7 6.6C12 6.3 12 5.7 11.7 5.4C11.4 5.1 10.9 5.1 10.5 5.4ZM13 8.8C13.4971 8.8 13.9 8.39706 13.9 7.9C13.9 7.40294 13.4971 7 13 7C12.5029 7 12.1 7.40294 12.1 7.9C12.1 8.39706 12.5029 8.8 13 8.8ZM6.4 3.5H7.6V5.4H9.5V6.6H7.6V8.5H6.4V6.6H4.5V5.4H6.4V3.5ZM16.5 13.3C16.7 13.5 16.9 13.6 17.2 13.6C17.8 13.6 18.2 13.2 18.2 12.6C18.2 12.7 16.8 4.8 16.8 4.7C16.5 3 15 1.8 13.3 1.8H6.7C4.9 1.8 3.5 3 3.2 4.7C3.2 4.8 1.8 12.7 1.8 12.7C1.8 13.3 2.3 13.7 2.8 13.7C3.1 13.7 3.3 13.6 3.5 13.4L6.9 10H13.1L13.4 10.2L16.5 13.3Z" fill="#5F6368" />
+      </svg> Jogos</button>
+    <button style="color: #01875F;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H6C4.89543 4 4 4.89543 4 6V9C4 10.1046 4.89543 11 6 11H9C10.1046 11 11 10.1046 11 9V6C11 4.89543 10.1046 4 9 4ZM6 9V6H9V9H6ZM15 6V9H18V6H15ZM18 4H15C13.8954 4 13 4.89543 13 6V9C13 10.1046 13.8954 11 15 11H18C19.1046 11 20 10.1046 20 9V6C20 4.89543 19.1046 4 18 4ZM15 15V18H18V15H15ZM18 13H15C13.8954 13 13 13.8954 13 15V18C13 19.1046 13.8954 20 15 20H18C19.1046 20 20 19.1046 20 18V15C20 13.8954 19.1046 13 18 13ZM6 15V18H9V15H6ZM9 13H6C4.89543 13 4 13.8954 4 15V18C4 19.1046 4.89543 20 6 20H9C10.1046 20 11 19.1046 11 18V15C11 13.8954 10.1046 13 9 13Z" fill="#01875F"></path>
+      </svg> Apps</button>
+    <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2V22H21V2H3ZM5 20H19V4H5V20ZM9 7H6V5H9V7ZM18 7H15V5H18V7ZM6 19H9V17H6V19ZM18 19H15V17H18V19ZM15 15H18V13H15V15ZM9 15H6V13H9V15ZM15 11H18V9H15V11ZM9 11H6V9H9V11Z" fill="#5F6368" />
+      </svg> Filmes</button>
+    <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4996 6.36584L14.001 7.65237V4H11.001V7.65075L12.4996 6.36584ZM10 2H11.001H14.001H15H16.998C18.6461 2 20.001 3.35397 20.001 5.002V18.998C20.001 20.646 18.6461 22 16.998 22H4V2H10ZM18.001 5.002C18.001 4.459 17.542 4 16.998 4H16.001V12L12.5 9L9.001 12V4H6V20H16.998C17.542 20 18.001 19.541 18.001 18.998V5.002Z" fill="#5F6368" />
+      </svg> Livros</button>
+    <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 20.439C13.1543 20.787 17.2264 22 17.6293 22C18.4311 22 18.928 21.578 19.154 21.325C19.7049 20.7081 19.7029 20.0604 19.6999 19.0794L19.6999 19.074C19.6989 18.647 19.6299 16.111 19.6009 15.125C20.2258 14.252 21.8914 11.907 22.1604 11.5C22.7292 10.643 23.2201 9.901 22.8972 8.908C22.5724 7.90856 21.7594 7.61034 20.8112 7.26259L20.8096 7.262C20.3747 7.103 17.7853 6.254 16.8195 5.942C16.2026 5.107 14.518 2.848 14.221 2.476L14.2198 2.47445C13.5875 1.68311 13.0416 1 11.9995 1C10.9577 1 10.4108 1.684 9.77797 2.477C9.48103 2.848 7.79639 5.107 7.18052 5.942C6.21372 6.255 3.62427 7.103 3.18436 7.265C2.24156 7.61 1.42773 7.908 1.1028 8.908C0.779871 9.901 1.27077 10.643 1.83965 11.501C2.10059 11.894 3.77424 14.252 4.39911 15.125C4.37011 16.111 4.30113 18.646 4.29913 19.074V19.0741C4.29613 20.058 4.29415 20.708 4.84501 21.324C5.06996 21.576 5.56686 22 6.37069 22C6.7726 22 10.8447 20.787 11.9995 20.439ZM17.6018 15.1838C17.6437 16.6103 17.6991 18.7493 17.6999 19.0787C17.7021 19.8051 17.6963 19.9322 17.6736 19.9767C17.5616 19.9504 17.418 19.9144 17.2472 19.8699C16.8391 19.7634 16.2949 19.6126 15.6462 19.4271C14.6587 19.1447 13.4965 18.8013 12.5766 18.5241L11.9995 18.3502L11.4224 18.5241C10.5029 18.8012 9.34041 19.1447 8.35292 19.4271C7.7042 19.6126 7.16005 19.7634 6.75206 19.8699C6.58148 19.9145 6.43802 19.9504 6.32604 19.9766C6.30304 19.9326 6.2969 19.8071 6.29912 19.0801C6.30067 18.7488 6.35718 16.5803 6.39824 15.1838L6.41807 14.5095L6.02543 13.9609C5.19866 12.8058 3.70925 10.7011 3.50581 10.3947C3.01485 9.65422 2.98744 9.57977 3.00475 9.52653C3.02422 9.46662 3.06796 9.4373 3.87165 9.1432C4.20463 9.02058 6.39401 8.29883 7.79654 7.84477L8.40835 7.64669L8.79007 7.12916C9.57143 6.06978 11.1071 4.01707 11.3394 3.72674C11.8852 3.04281 11.9401 3 11.9995 3C12.049 3 12.0824 3.02198 12.403 3.40831C12.4693 3.48831 12.5251 3.55748 12.6586 3.72451C12.8889 4.01303 14.4014 6.03473 15.2108 7.1304L15.5929 7.64752L16.2047 7.84516C17.4867 8.25931 19.7877 9.01784 20.1229 9.1404L20.1237 9.1407C20.2142 9.17389 20.2145 9.17398 20.3015 9.20614C20.9377 9.44213 20.977 9.47051 20.9951 9.52605C21.0125 9.57968 20.9851 9.65415 20.4941 10.3939C20.2859 10.7088 18.8457 12.7438 17.9746 13.9609L17.5819 14.5095L17.6018 15.1838Z" fill="#5F6368" />
+      </svg> Crianças</button>
+  </nav>
 </body>
+
+<script src="script.js"></script>
 
 </html>
